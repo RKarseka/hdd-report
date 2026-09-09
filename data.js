@@ -35,7 +35,7 @@ window.driveData = [
         rec: "Серверный накопитель старого поколения RE3. Полностью здоров. Из-за скромного объема отлично подойдет под хранение конфигурационных файлов или нетребовательных бэкапов."
     },
     {
-        id: 5, name: "Seagate Barracuda (ST2000DM001)", alias: "big storage", form: "3.5\"", size: "2000 GB", score: 16, sn: "Z1E6687D", class: "good", badge: "good", statusText: "Исправен",
+        id: 5, name: "Seagate Barracuda (ST2000DM001)", alias: "МН big storage", form: "3.5\"", size: "2000 GB", score: 16, sn: "Z1E66S7D", class: "good", badge: "good", statusText: "Исправен",
         powerWatts: 8.0, sizeTb: 2.0,
         metrics: "Reallocated = 0, Pending = 0, Наработка = 54 854 часа. Ошибок чтения/записи нет.",
         rec: "Поверхность накопителя чистая, но у диска внушительный пробег (более 6 лет). Использовать в критически важных узлах не стоит, но для файлового архива подходит отлично."
@@ -47,7 +47,7 @@ window.driveData = [
         rec: "Магнитные пластины в норме, наработка малая. Датчик удара зафиксировал 530 сильных встрясок в прошлом. Избегайте механических воздействий на систему в будущем."
     },
     {
-        id: 7, name: "ST1000DM003-1CH162", alias: "old seagate", form: "3.5\"", size: "1.00 TB", score: 14, sn: "S1DGSZCL", class: "warn-crit", badge: "warning", statusText: "Удовлетворительное",
+        id: 7, name: "ST1000DM003-1CH162", alias: "MN old seagate", form: "3.5\"", size: "1.00 TB", score: 14, sn: "S1DGSZCL", class: "warn-crit", badge: "warning", statusText: "Удовлетворительное",
         powerWatts: 5.9, sizeTb: 1.0,
         metrics: "Reallocated = 0, Pending = 0, Наработка = 55 914 часов, Runtime_Bad_Block = 1.",
         rec: "Поверхность чистая, но наработка огромная (6.3 года) and был зафиксирован один сбойный блок. Использовать накопитель под базы данных без резервного копирования нельзя."

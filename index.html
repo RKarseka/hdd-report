@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд состояния накопителей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Дашборд состояния накопителей</h1>
+        <p class="subtitle">Сводный отчет по результатам анализа S.M.A.R.T. параметров пула виртуализации</p>
+    </header>
+
+    <!-- Сводная панель статистики -->
+    <div class="summary-container" id="summary-cards"></div>
+
+    <div class="controls">
+        <button class="btn active" id="btn-all">Все накопители</button>
+        <button class="btn" id="btn-warn">Внимание / Критические</button>
+        <button class="btn" id="btn-good">Здоровые</button>
+    </div>
+
+    <div class="table-container">
+        <table id="main-drive-table">
+            <thead id="drive-table-header"></thead>
+            <tbody id="drive-table-body"></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal" id="detailsModal">
+    <div class="modal-content">
+        <span class="close-btn" id="modal-close">&times;</span>
+        <div class="modal-header">
+            <h2 id="modalTitle">Название накопителя</h2>
+            <div class="modal-subtitle" id="modalMeta">Серийный номер • Объем</div>
+        </div>
+        
+        <div class="detail-section" id="sectionStatus">
+            <h4>Текущая оценка здоровья</h4>
+            <p class="detail-text" id="modalScore">0 / 20</p>
+        </div>
+
+        <div class="detail-section" id="sectionAnalysis">
+            <h4>Критические маркеры и метрики</h4>
+            <p class="detail-text" id="modalAnalysis">Анализ параметров...</p>
+        </div>
+
+        <div class="detail-section" id="sectionRecommendation">
+            <h4>Рекомендация эксперта</h4>
+            <p class="detail-text" id="modalRecommendation">Что необходимо сделать...</p>
+        </div>
+    </div>
+</div>
+
+<!-- Последовательное подключение модулей без CORS-ошибок -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
